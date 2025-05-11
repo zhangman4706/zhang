@@ -57,5 +57,5 @@ def generate_acrostic(head: str = Query(..., min_length=1, max_length=4, descrip
         return {"acrostic_poem": result}
     except Exception as e:
         return {"error": str(e)}
-#http://localhost:8000/docs
-#uvicorn api:app --host 0.0.0.0 --port 8000
+#http://localhost:8000/docs #是否网页打开
+#uvicorn api:app --host 0.0.0.0 --port 8000，打开网页
